@@ -12,6 +12,7 @@ public class RouteConfig {
         return builder.routes()
             .route("opensam-member", r -> r.path("/api/member/**").uri("lb://opensam-member"))
             .route("opensam-character", r -> r.path("/api/character/**").uri("lb://opensam-character"))
+            .route("opensam-command", r -> r.path("/api/command/**").uri("lb://opensam-command"))
             .build();
     }
 }

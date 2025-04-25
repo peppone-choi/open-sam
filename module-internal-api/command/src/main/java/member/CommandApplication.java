@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication
 @EnableDiscoveryClient
 @Import({MinimalSecurityConfig.class})
-public class MemberApplication {
+public class CommandApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MemberApplication.class, args);
+        SpringApplication.run(CommandApplication.class, args);
     }
 }
