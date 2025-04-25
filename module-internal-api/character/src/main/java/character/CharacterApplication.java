@@ -1,4 +1,4 @@
-package member;
+package character;
 
 
 import com.pepponechoi.opensam.config.MinimalSecurityConfig;
@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication
 @EnableDiscoveryClient
 @Import({MinimalSecurityConfig.class})
-public class CommandApplication {
+public class CharacterApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CommandApplication.class, args);
+        SpringApplication.run(CharacterApplication.class, args);
     }
 }
