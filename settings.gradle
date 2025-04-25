@@ -1,0 +1,17 @@
+rootProject.name = 'opensam'
+include(":module-common")
+findProject(":module-common").name = "common"
+include ":module-cron"
+findProject(":module-cron").name = "cron"
+include ":module-eureka-server"
+findProject(":module-eureka-server").name = "eureka-server"
+include ":module-api-gateway"
+findProject(":module-api-gateway").name = "api-gateway"
+include(":module-external-api")
+findProject(":module-external-api").name = "e-api"
+include(":module-internal-api")
+findProject(":module-internal-api").name = "i-api"
+include ':i-api:member'
+findProject(':i-api:member')?.name = 'member'
+include ':i-api:character'
+findProject(':i-api:character')?.name = 'character'
